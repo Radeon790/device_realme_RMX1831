@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LOS stuff.
-$(call inherit-product, vendor/potato/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit from realme RMX1831
 $(call inherit-product, device/realme/RMX1831/device.mk)
@@ -35,7 +35,7 @@ TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := potato_RMX1831
+PRODUCT_NAME := aosp_RMX1831
 PRODUCT_DEVICE := RMX1831
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
@@ -52,5 +52,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1831" \
     PRIVATE_BUILD_DESC="full_oppo6771_18611-user 9 PPR1.180610.011 eng.root.20200915.143154 release-keys"
     
-BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RQ2A.210505.002/7246365:user/release-keys"
+BUILD_FINGERPRINT := "google/flame/flame:S/SPB2.210513.007/7398525:user/release-keys"
 
